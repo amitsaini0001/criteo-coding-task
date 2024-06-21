@@ -97,7 +97,7 @@ export const UserPage = () => {
           </p>
         </div>
       </div>
-      {/* Ideally should have skeleton component for loading and error component for error */}
+      {/* Ideally should have error component for error */}
       {isLoading && <UserTableSkeleton/>}
       {isError && <div className="text-center"><p>Error fetching users.</p></div>}
       {isSuccess && data && <UserTable columns={columns} data={data} refetch={refetch} />}
