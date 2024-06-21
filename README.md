@@ -1,5 +1,7 @@
 # Criteo Coding Task
 
+[LIVE CODING TASK 🚀](https://amitsaini0001.github.io/criteo-coding-task/)
+
 # Things that are done
 - ✅ Create a single page that:
 	- Displays a single table which renders a list of users.
