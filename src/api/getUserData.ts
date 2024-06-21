@@ -10,8 +10,8 @@ type GetUserDataType = {
   isSuccess: boolean;
   refetch: KeyedMutator<User[]>;
 };
-export const getUserData = (): GetUserDataType => {
-  const fetcher: Fetcher<User[], any> = (url: string) =>
+export const GetUserData = (): GetUserDataType => {
+  const fetcher: Fetcher<User[]> = (url: string) =>
     fetch(url).then((res) => res.json());
   const { data, error, isLoading, mutate, isValidating } = useSWR<User[]>(
     "https://jsonplaceholder.typicode.com/users",

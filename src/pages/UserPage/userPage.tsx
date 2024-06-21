@@ -1,4 +1,4 @@
-import { getUserData } from "@/api/getUserData";
+import { GetUserData } from "@/api/getUserData";
 import { UserTable } from "@/components/userTable/UserTable";
 import UserTableSkeleton from "@/components/userTable/UserTableSkeleton";
 import { Address, Company, User } from "@/components/userTable/types";
@@ -83,7 +83,7 @@ export const columns: ColumnDef<User>[] = [
 ];
 
 export const UserPage = () => {
-  const { data, isError, isLoading, isSuccess, refetch } = getUserData();
+  const { data, isError, isLoading, isSuccess, refetch } = GetUserData();
 
   return (
     <div className=" h-full flex-1 flex-col space-y-8 p-8 md:flex">
